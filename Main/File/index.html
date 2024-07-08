@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+     <div class="music-player">
+       <div class="header">
+         <img class="list1" src="/Main/image/setting.png" alt="Settings">
+               <div class="music-list">
+                  <img class="list2" src="/Main/image/list.png" alt="list">
+                    <img class="music pl" src="/Main/image/music-list.png" alt="Music List">
+               </div>
+       </div>
+    
+       <div class="main">
+          <img src="/Main/image/music-logo.png" alt="Mhsic Logo">
+          <h1>Rahul</h1>
+          <p>Amar sonar bangla</p>
+          
+                 <div class="lock-line">
+                     <div class="lock-unlock">
+                         <img id="lock" class="lock" src="/Main/image/lock.png" alt="Lock">
+                         <img id="unlock" class="unlock pl" src="/Main/image/unlock.png" alt="Unlock">
+                     </div>
+                     <input type="range" name="range" id="range">
+                     <ul class="time">
+                         <li class="min">00</li>
+                         <li>:</li>
+                         <li class="sec">00</li>
+                     </ul>
+                  </div>
+       </div>
+      <audio  id="song">
+          <source src="/Main/File/audio/Action Teaser Trailer Background Music No Copyright (Cinematic, SciFi, Dark, Intense).mp3" type="audio/mp3">
+      </audio> 
+        <div class="footer">
+          <img class="left" src="/Main/image/left.png" alt="left">
+         
+             <div class="play-puse">
+               <img  class="play " src="/Main/image/play.png" alt="play">
+               <img onclick="playpause()" class="puse pl" src="/Main/image/puse.png" alt="pause">
+             </div>
+             <img class="right" src="/Main/image/right.png" alt="right">
+        </div>
+       
+     </div>
+  </div>
+  
+<script src="main.js"></script>
+</body>
+</html>
